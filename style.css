@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: background 1s;
+    cursor: default;
+}
+
+.card{
+    background-color: #7136ce;
+    border-radius: 25px;
+    box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.22);
+    padding: 40px;
+    margin: 20px;
+    width: 350px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+.alunos{
+    display: flex;
+    overflow-x: scroll;
+    max-width: 100vw;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+.aluno{
+    margin-left: 1vh;
+}
+.aluno:first-child{
+    margin-left: 0;
+}
+.aluno img{
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid #7136ce;
+}
+
+.cards-e{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-e {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 25px;
+    background-color: #3f3f3f;
+    text-align: justify;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+    position: relative;
+    border-radius: 10px;
+}
+
+.card-e::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid #7136ce;
+    border-right: 20px solid #7136ce;
+}
+
+/** Icon **/
+.icon {
+    margin-bottom: 20px;
+}
+
+.icon img {
+    width: 150px;
+}
+
+/** Content **/
+.content {
+    height: 215px;
+    overflow: hidden;
+    position: relative;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #3f3f3f);
+}
+
+.content h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    position: relative;
+}
+
+.content h3::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    background-color: #7136ce;
+    bottom: 4px;
+    border-radius: 100px;
+}
+
+.content p {
+    color: #b7b7b7;
+}
+
+/** Read More/Less Button **/
+#read_button {
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: #7136ce;
+    color: #313131;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+#read_button:hover {
+    background-color: transparent;
+    color: #7136ce;
+    transition: all 0.2s ease-in-out;
+}
+
+/** Active **/
+.card-e.active .content {
+    height: auto;
+}
+
+.card-e.active .content::before {
+    visibility: hidden;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
