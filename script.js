@@ -2,6 +2,7 @@
 var button = document.getElementById('read_button');
 var button2 = document.getElementById('read_buttone')
 
+// CARD DE CIMA
 // Click Event
 function clicar() {
     // Select card
@@ -19,6 +20,7 @@ function clicar() {
     button.textContent = 'Leia mais';
 };
 
+// CARD DE BAIXO
 function clicare() {
     // Select card
     var card2 = document.querySelector('.card-ee');
