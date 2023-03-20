@@ -160,6 +160,108 @@ a{
 }
 
 
+
+
+.card-ee {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 25px;
+    background-color: #3f3f3f;
+    text-align: justify;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+    position: relative;
+    border-radius: 10px;
+}
+
+.card-ee::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid #7136ce;
+    border-right: 20px solid #7136ce;
+}
+
+/** Icon **/
+.icon {
+    margin-bottom: 20px;
+}
+
+.icon img {
+    width: 250px;
+}
+
+/** Content **/
+.contente {
+    height: 215px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contente::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #3f3f3f);
+}
+
+.contente h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    position: relative;
+}
+
+.contente h3::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    background-color: #7136ce;
+    bottom: 4px;
+    border-radius: 100px;
+}
+
+.contente p {
+    color: #b7b7b7;
+}
+
+/** Read More/Less Button **/
+#read_buttone {
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: #7136ce;
+    color: #313131;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+#read_buttone:hover {
+    background-color: transparent;
+    color: #7136ce;
+    transition: all 0.2s ease-in-out;
+}
+
+/** Active **/
+.card-ee.active .contente {
+    height: auto;
+}
+
+.card-ee.active .contente::before {
+    visibility: hidden;
+}
+
 ::-webkit-scrollbar{
     display: none;
 }
