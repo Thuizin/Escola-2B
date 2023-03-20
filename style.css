@@ -18,7 +18,8 @@ body{
 }
 
 .card{
-    font-family: 'Sono', sans-serif;;
+    font-family: 'Sono', sans-serif;
+    font-size: 13px;
     background-color: #7136ce;
     border-radius: 25px;
     box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.22);
@@ -88,7 +89,7 @@ a{
 }
 
 .icon img {
-    width: 150px;
+    width: 250px;
 }
 
 /** Content **/
