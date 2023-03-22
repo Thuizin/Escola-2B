@@ -9,17 +9,14 @@ html{
     --roxo: #672178ff;
     --background-card: #1f222a;
 
-
-    height: 100%;
-    font-family: 'Montserrat';
     
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    
-    --bg: #FCFCFC;
+    /* text */
+    --bg: #FCFCFC; 
+    /* background */
     --bg-panel: #EBEBEB;
-    --color-headings: #0077FF;
+    /* text2 */
+    --color-headings: #00a2ff;
+    /* text1 */
     --color-text: #333333;
 }
 
@@ -37,8 +34,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--background);
-    transition: background 1s;
+    background-color: var(--bg-panel);
+    transition: background 0.5s;
     cursor: default;
     font-family: 'agency fb';
 }
@@ -66,7 +63,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: var(--text);
+    color: var(--color-text);
     font-weight: 700;
 }
 .aluno{
@@ -94,12 +91,13 @@ a{
     justify-content: center;
     width: 300px;
     padding: 25px;
-    background-color: #3f3f3f;
+    background-color: var(--bg);
     text-align: justify;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
     position: relative;
     border-radius: 10px;
-    color: var(--text);
+    color: var(--color-text);
+    transition: background 0.5s;
 }
 
 .card-e::before{
@@ -134,7 +132,7 @@ a{
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(transparent, #3f3f3f);
+    background: linear-gradient(transparent, var(--bg));
 }
 
 .content h3 {
@@ -155,7 +153,7 @@ a{
 }
 
 .content p {
-    color: var(--text-white);
+    color: var(--color-text-white);
 }
 
 /** Read More/Less Button **/
@@ -165,7 +163,7 @@ a{
     border-radius: 2px;
     margin-top: 15px;
     background-color: var(--roxo);
-    color: #313131;
+    color: var(--color-headings);
     font-weight: bold;
     cursor: pointer;
     font-size: 16px;
@@ -198,12 +196,13 @@ a{
     justify-content: center;
     width: 300px;
     padding: 25px;
-    background-color: #3f3f3f;
+    background-color: var(--bg);
     text-align: justify;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
     position: relative;
     border-radius: 10px;
-    color: var(--text);
+    color: var(--color-text);
+    transition: background 0.5s;
 }
 
 .card-ee::before{
@@ -238,7 +237,7 @@ a{
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(transparent, #3f3f3f);
+    background: linear-gradient(transparent, var(--bg));
 }
 
 .contente h3 {
@@ -259,7 +258,7 @@ a{
 }
 
 .contente p {
-    color: var(--text-white);
+    color: var(--color-text-white);
 }
 
 /** Read More/Less Button **/
@@ -269,7 +268,7 @@ a{
     border-radius: 2px;
     margin-top: 15px;
     background-color: var(--roxo);
-    color: #313131;
+    color: var(--color-headings);
     font-weight: bold;
     cursor: pointer;
     font-size: 16px;
@@ -329,7 +328,7 @@ a{
 }
 
 .info{
-    color: var(--text);
+    color: var(--color-text);
     font-size: 10pt;
 }
 
@@ -356,3 +355,53 @@ a{
 }
 
 
+
+
+
+
+
+
+
+
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: grey;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background-color: var(--color-headings);
+}
+
+input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}
