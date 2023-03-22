@@ -8,6 +8,19 @@ html{
     --blue: #0000FF;
     --roxo: #672178ff;
     --background-card: #1f222a;
+
+
+    height: 100%;
+    font-family: 'Montserrat';
+    
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #333333;
 }
 
 
@@ -341,3 +354,5 @@ a{
         width: 40vw;
     }
 }
+
+

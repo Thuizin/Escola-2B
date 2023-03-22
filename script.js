@@ -36,3 +36,34 @@ function clicare() {
     // Change button text if hasn't class active
     button2.textContent = 'Leia mais';
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
