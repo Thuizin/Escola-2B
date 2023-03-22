@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+html{
+    --background: #212121;
+    --text: #fff;
+    --text-white: #b7b7b7;
+    --title: #000;
+    --blue: #0000FF;
+    --roxo: #672178ff;
+    --background-card: #1f222a;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -12,23 +24,23 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--background);
     transition: background 1s;
     cursor: default;
+    font-family: 'agency fb';
 }
 
 /* CARD ROXO */
 .card{
-    font-family: 'Sono', sans-serif;
     font-size: 13px;
-    background-color: #7136ce;
+    background-color: var(--roxo);
     border-radius: 25px;
     box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.22);
     padding: 40px;
     margin: 20px;
     width: 350px;
     text-align: center;
-    color: white;
+    color: var(--title);
     transition: all 0.3s ease-out;
 }
 
@@ -36,12 +48,12 @@ body{
 .alunos{
     display: flex;
     overflow-x: scroll;
-    max-width: 100vw;
+    width: 35vw;
     text-align: center;
 }
 a{
     text-decoration: none;
-    color: #000;
+    color: var(--text);
     font-weight: 700;
 }
 .aluno{
@@ -53,14 +65,13 @@ a{
 .aluno img{
     width: 70px;
     border-radius: 50%;
-    border: 3px solid #7136ce;
+    border: 3px solid var(--roxo);
 }
 
 
 /* CARD DE CIMA */
 .cards-e{
     display: flex;
-    flex-direction: column;
 }
 
 .card-e {
@@ -75,6 +86,7 @@ a{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
     position: relative;
     border-radius: 10px;
+    color: var(--text);
 }
 
 .card-e::before{
@@ -83,8 +95,8 @@ a{
     top: 0;
     right: 0;
     border: 20px solid transparent;
-    border-top: 20px solid #7136ce;
-    border-right: 20px solid #7136ce;
+    border-top: 20px solid var(--roxo);
+    border-right: 20px solid var(--roxo);
 }
 
 /** Icon **/
@@ -98,7 +110,7 @@ a{
 
 /** Content **/
 .content {
-    height: 215px;
+    height: 150px;
     overflow: hidden;
     position: relative;
 }
@@ -124,13 +136,13 @@ a{
     position: absolute;
     height: 2px;
     width: 40px;
-    background-color: #7136ce;
-    bottom: 4px;
+    background-color: var(--roxo);
+    bottom: 2px;
     border-radius: 100px;
 }
 
 .content p {
-    color: #b7b7b7;
+    color: var(--text-white);
 }
 
 /** Read More/Less Button **/
@@ -139,7 +151,7 @@ a{
     padding: 10px;
     border-radius: 2px;
     margin-top: 15px;
-    background-color: #7136ce;
+    background-color: var(--roxo);
     color: #313131;
     font-weight: bold;
     cursor: pointer;
@@ -150,7 +162,7 @@ a{
 
 #read_button:hover {
     background-color: transparent;
-    color: #7136ce;
+    color: var(--roxo);
     transition: all 0.2s ease-in-out;
 }
 
@@ -178,6 +190,7 @@ a{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
     position: relative;
     border-radius: 10px;
+    color: var(--text);
 }
 
 .card-ee::before{
@@ -186,8 +199,8 @@ a{
     top: 0;
     right: 0;
     border: 20px solid transparent;
-    border-top: 20px solid #7136ce;
-    border-right: 20px solid #7136ce;
+    border-top: 20px solid var(--roxo);
+    border-right: 20px solid var(--roxo);
 }
 
 /** Icon **/
@@ -201,7 +214,7 @@ a{
 
 /** Content **/
 .contente {
-    height: 215px;
+    height: 150px;
     overflow: hidden;
     position: relative;
 }
@@ -227,13 +240,13 @@ a{
     position: absolute;
     height: 2px;
     width: 40px;
-    background-color: #7136ce;
-    bottom: 4px;
+    background-color: var(--roxo);
+    bottom: 2px;
     border-radius: 100px;
 }
 
 .contente p {
-    color: #b7b7b7;
+    color: var(--text-white);
 }
 
 /** Read More/Less Button **/
@@ -242,7 +255,7 @@ a{
     padding: 10px;
     border-radius: 2px;
     margin-top: 15px;
-    background-color: #7136ce;
+    background-color: var(--roxo);
     color: #313131;
     font-weight: bold;
     cursor: pointer;
@@ -253,7 +266,7 @@ a{
 
 #read_buttone:hover {
     background-color: transparent;
-    color: #7136ce;
+    color: var(--roxo);
     transition: all 0.2s ease-in-out;
 }
 
@@ -268,4 +281,63 @@ a{
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.fundo{
+    width: 100vw;
+    height: 40vh;
+    background-image: url(img/arvore.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.05;
+    background-position-y: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.avatar img{
+    border-radius: 50%;
+    border: 2px solid var(--roxo);
+    margin-top: -15vh;
+    width: 15vw;
+    z-index: 999;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.info{
+    color: var(--text);
+    font-size: 10pt;
+}
+
+
+
+
+
+
+@media (max-width: 1000px){
+    .cards-e{
+        flex-direction: column;
+    }
+    .alunos{
+        width: 100vw;
+    }
+
+    .fundo{
+        height: 25vh;
+    }
+
+    .avatar img{
+        width: 40vw;
+    }
 }
