@@ -79,10 +79,10 @@ const initialColors = {
 }
 
 const darkMode = {
-    bg: "#3f3f3f",
-    bgPanel: "#212121",
-    colorHeadings: "#3664FF",
-    colorText: "#fff"
+    bg: "#FCFCFC",
+    bgPanel: "#EBEBEB",
+    colorHeadings: "#00a2ff",
+    colorText: "#333333"
 }
 
 const transformKey = key => 

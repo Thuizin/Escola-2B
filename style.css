@@ -11,13 +11,13 @@ html{
 
     
     /* text */
-    --bg: #FCFCFC; 
+    --bg: #3f3f3f; 
     /* background */
-    --bg-panel: #EBEBEB;
+    --bg-panel: #212121;
     /* text2 */
-    --color-headings: #00a2ff;
+    --color-headings: #3664FF;
     /* text1 */
-    --color-text: #333333;
+    --color-text: #fff;
 }
 
 
