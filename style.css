@@ -54,6 +54,7 @@ body{
     text-align: center;
     color: var(--title);
     transition: all 0.3s ease-out;
+    font-family: 'Inter', sans-serif;
 }
 
 /* SEÇÃO DE ALUNOS */
@@ -70,6 +71,7 @@ a{
 }
 .aluno{
     margin-left: 1vh;
+    transition: 0.5s;
 }
 .aluno:first-child{
     margin-left: 0;
