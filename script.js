@@ -76,13 +76,15 @@ const initialColors = {
     bgPanel: getStyle(html, "--bg-panel"),
     colorHeadings: getStyle(html, "--color-headings"),
     colorText: getStyle(html, "--color-text"),
+    card: getStyle(html, "--card"),
 }
 
 const darkMode = {
     bg: "#FCFCFC",
     bgPanel: "#EBEBEB",
     colorHeadings: "#00a2ff",
-    colorText: "#333333"
+    colorText: "#333333",
+    card: "#fff",
 }
 
 const transformKey = key => 
